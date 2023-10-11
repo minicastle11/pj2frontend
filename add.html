@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
     :root {
       --bs-blue: #0d6efd;
       --bs-indigo: #6610f2;
@@ -244,17 +243,14 @@
 
     .level {
       margin-right: 10px;
-      /* level 오른쪽 간격 조절 */
     }
 
     #mname {
       margin-right: 10px;
-      /* mname 오른쪽 간격 조절 */
     }
 
     input[type="submit"] {
       margin-right: 10px;
-      /* submit 버튼 오른쪽 간격 조절 */
     }
 
 
@@ -494,80 +490,79 @@
     }
 
     .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    }
 
-.text-justify {
-  text-align: justify !important;
-}
+    .text-justify {
+      text-align: justify !important;
+    }
 
-.text-wrap {
-  white-space: normal !important;
-}
+    .text-wrap {
+      white-space: normal !important;
+    }
 
-.text-nowrap {
-  white-space: nowrap !important;
-}
+    .text-nowrap {
+      white-space: nowrap !important;
+    }
 
-.text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+    .text-truncate {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
-.text-left {
-  text-align: left !important;
-}
+    .text-left {
+      text-align: left !important;
+    }
 
-.text-right {
-  text-align: right !important;
-}
+    .text-right {
+      text-align: right !important;
+    }
 
-.text-center {
-  text-align: center !important;
-}
-.pagination {
-  text-align: center; /* 텍스트를 중앙 정렬합니다. */
-}
+    .text-center {
+      text-align: center !important;
+    }
 
-.pagination a {
-  color: black;
-  display: inline-block; /* 페이지 번호를 블록 요소로 표시합니다. */
-  padding: 8px 16px;
-  border: 1px solid #ddd;
-}
+    .pagination {
+      text-align: center;
+    }
 
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
+    .pagination a {
+      color: black;
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+    }
 
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-}
+    .pagination a.active {
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+    }
 
-.addpage {
-  margin-right: 110px;
-  margin-left: 110px;
-  /* 위의 코드에서 --bs-gutter-x 값을 조절하여 원하는 간격을 설정할 수 있습니다. */
-}
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
 
+    .addpage {
+      margin-right: 110px;
+      margin-left: 110px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
         id="nametack">
         <span class="fs-4">맛집 리스트</span>
       </a>
       <ul class="nav nav-pills" id="title">
         <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="index.html" class="nav-link">NoStyle</a></li>
-        <li class="nav-item"><a href="edit.html" class="nav-link">Example</a></li>
-        <li class="nav-item"><a href="add.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="add.html" class="nav-link">Add</a></li>
+        <li class="nav-item"><a href="view.html" class="nav-link">View</a></li>
+        <li class="nav-item"><a href="edit.html" class="nav-link">Edit</a></li>
       </ul>
     </header>
   </div>
@@ -575,52 +570,52 @@
   <div class="addpage">
     <h1>이곳은 작성 페이지입니다. 양식에 맞춰서 작성해 주세요.</h1>
     <form action="index.html" method="GET">
-        <h3 id="name">당신이 방문한 맛집의 이름은 무엇인가요?</h3>
-        <input type="Name" id="fname" name="fname"><br><br>
-        <h3 id="people">방문 적정 인원수를 적어주세요</h3>
-        <input type="radio" id="1-3" name="su" value="1-3">
-        <label for="1-3">한명~네명</label><br>
-        <input type="radio" id="over4" name="su" value="over4">
-        <label for="over4">네명 이상</label><br><br>
-        <h3 id="number">당신이 방문한 맛집의 전화번호를 적어주세요</h3>
-        <input type="name" id="pnumber" name="pnumber"><br><br>
-        <h3 id="number">당신이 먹은 음식의 이름을 알려주세요</h3>
-        <input type="name" id="foodname" name="foodname"><br><br>
-        <h3 id="jongryu">당신이 간 음식점의 메뉴 특색은 어떤건가요?</h3>
-        <input type="checkbox" id="E" name="jongryu" value="한식">
-        <label for="한식">한식</label>
-        <input type="checkbox" id="I" name="jongryu" value="양식">
-        <label for="양식">양식</label>
-        <input type="checkbox" id="S" name="jongryu" value="중식">
-        <label for="중식">중식</label>
-        <input type="checkbox" id="N" name="jongryu" value="일식">
-        <label for="일식">일식</label>
-        <input type="checkbox" id="N" name="jongryu" value="그 외">
-        <label for="그 외">그 외</label><br>
-        <h3 id="birth">방문 날짜를 알려주세요</h3>
-        <input type="date" id="meetday" name="meetday">
-        <h3 id="Reagion">당신이 평가하는 별점의 갯수는?</h3>
-        <select class="level" name="star">
-          <option value="1">1개</option>
-          <option value="2">2개</option>
-          <option value="3">3개</option>
-          <option value="4">4개</option>
-          <option value="5">5개</option>
-        </select>
-            <h3 id="soge">짧은 평가를 작성해 주세요</h3>
-            <textarea id="self" rows="4" cols="32">
+      <h3 id="name">당신이 방문한 맛집의 이름은 무엇인가요?</h3>
+      <input type="Name" id="fname" name="fname"><br><br>
+      <h3 id="people">방문 적정 인원수를 적어주세요</h3>
+      <input type="radio" id="1-3" name="su" value="1-3">
+      <label for="1-3">한명~네명</label><br>
+      <input type="radio" id="over4" name="su" value="over4">
+      <label for="over4">네명 이상</label><br><br>
+      <h3 id="number">당신이 방문한 맛집의 전화번호를 적어주세요</h3>
+      <input type="name" id="pnumber" name="pnumber"><br><br>
+      <h3 id="number">당신이 먹은 음식의 이름을 알려주세요</h3>
+      <input type="name" id="foodname" name="foodname"><br><br>
+      <h3 id="jongryu">당신이 간 음식점의 메뉴 특색은 어떤건가요?</h3>
+      <input type="checkbox" id="E" name="jongryu" value="한식">
+      <label for="한식">한식</label>
+      <input type="checkbox" id="I" name="jongryu" value="양식">
+      <label for="양식">양식</label>
+      <input type="checkbox" id="S" name="jongryu" value="중식">
+      <label for="중식">중식</label>
+      <input type="checkbox" id="N" name="jongryu" value="일식">
+      <label for="일식">일식</label>
+      <input type="checkbox" id="N" name="jongryu" value="그 외">
+      <label for="그 외">그 외</label><br>
+      <h3 id="birth">방문 날짜를 알려주세요</h3>
+      <input type="date" id="meetday" name="meetday">
+      <h3 id="Reagion">당신이 평가하는 별점의 갯수는?</h3>
+      <select class="level" name="star">
+        <option value="1">1개</option>
+        <option value="2">2개</option>
+        <option value="3">3개</option>
+        <option value="4">4개</option>
+        <option value="5">5개</option>
+      </select>
+      <h3 id="soge">짧은 평가를 작성해 주세요</h3>
+      <textarea id="self" rows="4" cols="32">
             </textarea><br>
-            <button onclick="alert('저장되었습니다.')"><input type="submit" value="Submit" href="index.html" ></button>
-            
+      <button onclick="alert('저장되었습니다.')" ; window.location.href='index.html' ;>Submit</button>
+
     </form>
-</div>
+  </div>
 
 
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">© 22000521 SungminLee page</p>
-      <p class="mb-2">실전 프로젝트 2</p>
-    </footer>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 22000521 SungminLee page</p>
+    <p class="mb-2">실전 프로젝트 2</p>
+  </footer>
   </div>
 
 

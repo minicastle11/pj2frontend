@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
     :root {
       --bs-blue: #0d6efd;
       --bs-indigo: #6610f2;
@@ -242,17 +241,14 @@
 
     .level {
       margin-right: 10px;
-      /* level 오른쪽 간격 조절 */
     }
 
     #mname {
       margin-right: 10px;
-      /* mname 오른쪽 간격 조절 */
     }
 
     input[type="submit"] {
       margin-right: 10px;
-      /* submit 버튼 오른쪽 간격 조절 */
     }
 
 
@@ -472,9 +468,10 @@
     .table-bordered thead td {
       border-bottom-width: 2px;
     }
+
     table a {
-    color: black;
-  }
+      color: black;
+    }
 
     .table-striped tbody tr:nth-of-type(odd) {
       background-color: rgba(0, 0, 0, 0.05);
@@ -494,74 +491,74 @@
     }
 
     .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    }
 
-.text-justify {
-  text-align: justify !important;
-}
+    .text-justify {
+      text-align: justify !important;
+    }
 
-.text-wrap {
-  white-space: normal !important;
-}
+    .text-wrap {
+      white-space: normal !important;
+    }
 
-.text-nowrap {
-  white-space: nowrap !important;
-}
+    .text-nowrap {
+      white-space: nowrap !important;
+    }
 
-.text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+    .text-truncate {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
-.text-left {
-  text-align: left !important;
-}
+    .text-left {
+      text-align: left !important;
+    }
 
-.text-right {
-  text-align: right !important;
-}
+    .text-right {
+      text-align: right !important;
+    }
 
-.text-center {
-  text-align: center !important;
-}
-.pagination {
-  text-align: center; /* 텍스트를 중앙 정렬합니다. */
-}
+    .text-center {
+      text-align: center !important;
+    }
 
-.pagination a {
-  color: black;
-  display: inline-block; /* 페이지 번호를 블록 요소로 표시합니다. */
-  padding: 8px 16px;
-  border: 1px solid #ddd;
-}
+    .pagination {
+      text-align: center;
+    }
 
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
+    .pagination a {
+      color: black;
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+    }
 
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-}
+    .pagination a.active {
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+    }
 
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
         id="nametack">
         <span class="fs-4">맛집 리스트</span>
       </a>
       <ul class="nav nav-pills" id="title">
         <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="index.html" class="nav-link">NoStyle</a></li>
-        <li class="nav-item"><a href="edit.html" class="nav-link">Example</a></li>
-        <li class="nav-item"><a href="add.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="add.html" class="nav-link">Add</a></li>
+        <li class="nav-item"><a href="view.html" class="nav-link">View</a></li>
+        <li class="nav-item"><a href="edit.html" class="nav-link">Edit</a></li>
       </ul>
     </header>
   </div>
@@ -599,81 +596,81 @@
       <tbody>
         <tr>
           <td><a href="view.html">1</a></td>
-  <td><a href="view.html">삼촌네 찜닭</a></td>
-  <td><a href="view.html">23/02/23</a></td>
-  <td><a href="view.html">010-****-****</a></td>
-  <td><a href="view.html">4점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">2</a></td>
-            <td><a href="view.html">신세계 닭발</a></td>
-            <td><a href="view.html">23/02/27</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">3점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">3</a></td>
-            <td><a href="view.html">디저트39</a></td>
-            <td><a href="view.html">23/03/01</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">5점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">4</a></td>
-            <td><a href="view.html">통한닭</a></td>
-            <td><a href="view.html">23/03/08</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">5점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">5</a></td>
-            <td><a href="view.html">명륜진사갈비</a></td>
-            <td><a href="view.html">23/03/14</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">3점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">6</a></td>
-            <td><a href="view.html">쿠킹빌리지</a></td>
-            <td><a href="view.html">23/03/26</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">4점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">7</a></td>
-            <td><a href="view.html">홍익 돈까스</a></td>
-            <td><a href="view.html">23/04/01</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">4점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">8</a></td>
-            <td><a href="view.html">라쿵푸 마라탕</a></td>
-            <td><a href="view.html">23/04/11</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">1점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">9</a></td>
-            <td><a href="view.html">두남자 찜닭</a></td>
-            <td><a href="view.html">23/04/23</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">3점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">10</a></td>
-            <td><a href="view.html">샤브마니아</a></td>
-            <td><a href="view.html">23/04/30</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">4점</a></td>
-          </tr>
-          <tr>
-            <td><a href="view.html">11</a></td>
-            <td><a href="view.html">이비가짬뽕</a></td>
-            <td><a href="view.html">23/05/06</a></td>
-            <td><a href="view.html">010-****-****</a></td>
-            <td><a href="view.html">2점</a></td>
-          </tr>
+          <td><a href="view.html">삼촌네 찜닭</a></td>
+          <td><a href="view.html">23/02/23</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">4점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">2</a></td>
+          <td><a href="view.html">신세계 닭발</a></td>
+          <td><a href="view.html">23/02/27</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">3점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">3</a></td>
+          <td><a href="view.html">디저트39</a></td>
+          <td><a href="view.html">23/03/01</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">5점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">4</a></td>
+          <td><a href="view.html">통한닭</a></td>
+          <td><a href="view.html">23/03/08</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">5점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">5</a></td>
+          <td><a href="view.html">명륜진사갈비</a></td>
+          <td><a href="view.html">23/03/14</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">3점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">6</a></td>
+          <td><a href="view.html">쿠킹빌리지</a></td>
+          <td><a href="view.html">23/03/26</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">4점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">7</a></td>
+          <td><a href="view.html">홍익 돈까스</a></td>
+          <td><a href="view.html">23/04/01</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">4점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">8</a></td>
+          <td><a href="view.html">라쿵푸 마라탕</a></td>
+          <td><a href="view.html">23/04/11</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">1점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">9</a></td>
+          <td><a href="view.html">두남자 찜닭</a></td>
+          <td><a href="view.html">23/04/23</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">3점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">10</a></td>
+          <td><a href="view.html">샤브마니아</a></td>
+          <td><a href="view.html">23/04/30</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">4점</a></td>
+        </tr>
+        <tr>
+          <td><a href="view.html">11</a></td>
+          <td><a href="view.html">이비가짬뽕</a></td>
+          <td><a href="view.html">23/05/06</a></td>
+          <td><a href="view.html">010-****-****</a></td>
+          <td><a href="view.html">2점</a></td>
+        </tr>
       </tbody>
     </table>
     <div class="pagination text-center">
