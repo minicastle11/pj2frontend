@@ -592,6 +592,32 @@
       } else {
       }
     }
+
+    function validateForm() {
+      var fname = document.getElementById("fname").value;
+      var pnumber = document.getElementById("pnumber").value;
+      var meetday = document.getElementById("meetday").value;
+      var star = document.querySelector('.level').value;
+
+      if (fname === "") {
+        alert("맛집 이름을 입력해 주세요.");
+        return false; 
+      }
+      if (pnumber === "") {
+        alert("맛집 전화번호를 입력해 주세요.");
+        return false; 
+      }
+      if (meetday === "") {
+        alert("방문 날짜를 입력해 주세요.");
+        return false; 
+      }
+      if (star === "") {
+        alert("별점을 선택해 주세요.");
+        return false; 
+      }
+
+      return true;
+    }
   </script>
 </head>
 
@@ -612,7 +638,7 @@
   </div>
   <div class="addpage">
     <h1>이곳은 수정 페이지입니다. 양식에 맞춰서 작성해 주세요.</h1>
-    <form action="index.html" method="GET">
+    <form action="index.html" method="GET" onsubmit="return validateForm()">
       <h3 id="name">당신이 방문한 맛집의 이름은 무엇인가요?</h3>
       <input type="Name" id="fname" name="fname" value="삼촌네 찜닭"><br><br>
       <h3 id="people">방문 적정 인원수를 적어주세요</h3>
